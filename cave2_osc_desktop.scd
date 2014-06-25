@@ -15,10 +15,11 @@ var nChannels = 2; // CAVE2 = 20
 
 // This specifies the base directory of all sounds
 // Note: make sure the path ends with a '/'
-var soundPath = "C:/SoundServer/sounds/"; 
+//var soundPath = "C:/SoundServer/sounds/";
 //var soundPath = "/Users/evldemo/sounds/";
+var soundPath = "/cave/dev/sounds/";
 
-var initialVolume = -15; // CAVE2 = -15, desktop = 0
+var initialVolume = 0; // CAVE2 = -15, desktop = 0
 
 var masterNodeIP = "127.0.0.1";
 var statusDisplayIP = "127.0.0.1"; // Processing Status Display
@@ -29,8 +30,6 @@ var stereoRightChannels = [1]; // CAVE2 = [13,14,21]
 
 // Set server sample rate
 s.options.sampleRate= 48000;
-
-
 
 //create volume object
 v = s.volume;
